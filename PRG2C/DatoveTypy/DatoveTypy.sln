@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35222.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatoveTypy", "DatoveTypy.csproj", "{F92F492D-65EE-4FAB-94C9-2435BF61F7D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F92F492D-65EE-4FAB-94C9-2435BF61F7D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F92F492D-65EE-4FAB-94C9-2435BF61F7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F92F492D-65EE-4FAB-94C9-2435BF61F7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F92F492D-65EE-4FAB-94C9-2435BF61F7D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EDC0F9D-B6F6-4572-9B43-77CA0CD35F2C}
+	EndGlobalSection
+EndGlobal
