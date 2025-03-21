@@ -75,7 +75,7 @@
             // 
             this.SpockBtn.BackgroundImage = global::KamenNuzkyPapir.Properties.Resources.spock;
             this.SpockBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.SpockBtn.Location = new System.Drawing.Point(41, 200);
+            this.SpockBtn.Location = new System.Drawing.Point(41, 188);
             this.SpockBtn.Name = "SpockBtn";
             this.SpockBtn.Size = new System.Drawing.Size(100, 100);
             this.SpockBtn.TabIndex = 8;
@@ -86,7 +86,7 @@
             // 
             this.TapirBtn.BackgroundImage = global::KamenNuzkyPapir.Properties.Resources.tapir;
             this.TapirBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.TapirBtn.Location = new System.Drawing.Point(94, 323);
+            this.TapirBtn.Location = new System.Drawing.Point(116, 323);
             this.TapirBtn.Name = "TapirBtn";
             this.TapirBtn.Size = new System.Drawing.Size(100, 100);
             this.TapirBtn.TabIndex = 7;
@@ -108,7 +108,7 @@
             // 
             this.PaperBtn.BackgroundImage = global::KamenNuzkyPapir.Properties.Resources.paper;
             this.PaperBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.PaperBtn.Location = new System.Drawing.Point(320, 200);
+            this.PaperBtn.Location = new System.Drawing.Point(304, 188);
             this.PaperBtn.Name = "PaperBtn";
             this.PaperBtn.Size = new System.Drawing.Size(100, 100);
             this.PaperBtn.TabIndex = 2;
@@ -119,7 +119,7 @@
             // 
             this.stoneBtn.BackgroundImage = global::KamenNuzkyPapir.Properties.Resources.stone;
             this.stoneBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.stoneBtn.Location = new System.Drawing.Point(183, 94);
+            this.stoneBtn.Location = new System.Drawing.Point(176, 94);
             this.stoneBtn.Name = "stoneBtn";
             this.stoneBtn.Size = new System.Drawing.Size(100, 100);
             this.stoneBtn.TabIndex = 1;
@@ -154,6 +154,7 @@
             this.Controls.Add(this.EnemyChoice);
             this.Name = "Form1";
             this.Text = "Kámen - Nůžky - Papír";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Form1_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.EnemyChoice)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

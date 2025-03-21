@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 
 namespace KamenNuzkyPapir
 {
@@ -22,7 +25,7 @@ namespace KamenNuzkyPapir
     public partial class Form1 : Form
     {
 
-        ESelection selected = ESelection.None;
+        ESelection playerSelection = ESelection.None;
         int victory = 0;
         int loose = 0;
         public Form1()
@@ -32,30 +35,30 @@ namespace KamenNuzkyPapir
 
         private void RockBtn_Click(object sender, EventArgs e)
         {
-            selected = ESelection.Rock;
+            playerSelection = ESelection.Rock;
             LetsPlay();
         }
 
         private void ScissorsBtn_Click(object sender, EventArgs e)
         {
-            selected = ESelection.Scissors;
+            playerSelection = ESelection.Scissors;
             LetsPlay();
         }
         private void PaperBtn_Click(object sender, EventArgs e)
         {
-            selected = ESelection.Paper;
+            playerSelection = ESelection.Paper;
             LetsPlay();
         }
 
         private void TapirBtn_Click(object sender, EventArgs e)
         {
-            selected = ESelection.Tapir;
+            playerSelection = ESelection.Tapir;
             LetsPlay();
         }
 
         private void SpockBtn_Click(object sender, EventArgs e)
         {
-            selected = ESelection.Spock;
+            playerSelection = ESelection.Spock;
             LetsPlay();
         }
 
@@ -64,9 +67,9 @@ namespace KamenNuzkyPapir
         private void LetsPlay()
         {
             Random rnd = new Random();
-            int choice = rnd.Next(1, 6);
-            ESelection echoice = (ESelection)choice;
-            switch (choice)
+            int enemyChoice = rnd.Next(1, 6);
+            ESelection eEnemyChoice = (ESelection)enemyChoice;
+            switch (enemyChoice)
             {
                 case 1:
                     EnemyChoice.Image = KamenNuzkyPapir.Properties.Resources.stone;
@@ -85,14 +88,14 @@ namespace KamenNuzkyPapir
                     break;
             }
 
-            if (echoice == selected)
+            if (eEnemyChoice == playerSelection)
             {
                 VictoryLabel.Text = "Remíza";
                 VictoryLabel.ForeColor = Color.Yellow;
             }
-            else if (echoice == ESelection.Rock)
+            else if (eEnemyChoice == ESelection.Rock)
             {
-                if (selected == ESelection.Scissors || selected == ESelection.Tapir)
+                if (playerSelection == ESelection.Scissors || playerSelection == ESelection.Tapir)
                 {
                     Loose();
                 }
@@ -101,9 +104,9 @@ namespace KamenNuzkyPapir
                     Victory();
                 }
             }
-            else if (echoice == ESelection.Scissors)
+            else if (eEnemyChoice == ESelection.Scissors)
             {
-                if (selected == ESelection.Tapir || selected == ESelection.Paper)
+                if (playerSelection == ESelection.Tapir || playerSelection == ESelection.Paper)
                 {
                     Loose();
                 }
@@ -112,9 +115,9 @@ namespace KamenNuzkyPapir
                     Victory();
                 }
             }
-            else if (echoice == ESelection.Paper)
+            else if (eEnemyChoice == ESelection.Paper)
             {
-                if (selected == ESelection.Spock || selected == ESelection.Rock)
+                if (playerSelection == ESelection.Spock || playerSelection == ESelection.Rock)
                 {
                     Loose();
                 }
@@ -123,9 +126,9 @@ namespace KamenNuzkyPapir
                     Victory();
                 }
             }
-            else if (echoice == ESelection.Tapir)
+            else if (eEnemyChoice == ESelection.Tapir)
             {
-                if (selected == ESelection.Spock || selected == ESelection.Paper)
+                if (playerSelection == ESelection.Spock || playerSelection == ESelection.Paper)
                 {
                     Loose();
                 }
@@ -134,9 +137,9 @@ namespace KamenNuzkyPapir
                     Victory();
                 }
             }
-            else if (echoice == ESelection.Spock)
+            else if (eEnemyChoice == ESelection.Spock)
             {
-                if (selected == ESelection.Rock || selected == ESelection.Scissors)
+                if (playerSelection == ESelection.Rock || playerSelection == ESelection.Scissors)
                 {
                     Loose();
                 }
@@ -176,6 +179,67 @@ namespace KamenNuzkyPapir
             WinLooseRatioLbl.Text = "V/P: " + Math.Round(wl, 2);
         }
 
-        
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            drawLine(stoneBtn, 2, ScissorsBtn, 0, e);
+            drawLine(stoneBtn, 2, TapirBtn, 0, e);
+
+            drawLine(ScissorsBtn, 3, TapirBtn, 1, e);
+            drawLine(ScissorsBtn, 0, PaperBtn, 2, e);
+
+            drawLine(PaperBtn, 0, stoneBtn, 1, e);
+            drawLine(PaperBtn, 3, SpockBtn, 1, e);
+
+            drawLine(TapirBtn, 0, PaperBtn, 3, e);
+            drawLine(TapirBtn, 0, SpockBtn, 2, e);
+
+            drawLine(SpockBtn, 0, stoneBtn, 3, e);
+            drawLine(SpockBtn, 1, ScissorsBtn, 0, e);
+        }
+
+        /**
+         * edge 0 = top, 1 = right, 2 = bottom, 3 = left
+         * */
+        private void drawLine(Control c1, int edge1, Control c2, int edge2,  PaintEventArgs e)
+        {
+            Pen pen = new Pen(Color.FromArgb(255, 0, 0, 0));
+            int shift1X = 0;
+            int shift1Y = 0;
+            int shift2X = 0;
+            int shift2Y = 0;
+            calculateShift(c1, edge1, out shift1X, out shift1Y);
+            calculateShift(c2, edge2, out shift2X, out shift2Y);
+
+            pen.CustomEndCap = new AdjustableArrowCap(5, 5);
+
+            e.Graphics.DrawLine(pen, c1.Location.X + shift1X, c1.Location.Y + shift1Y, c2.Location.X + shift2X, c2.Location.Y + shift2Y);
+
+            //e.Graphics.DrawLine(pen, c1.Location.X + shift1X, c1.Location.Y + shift1Y, c2.Location.X + shift2X, c2.Location.Y + shift2Y);
+        }
+
+        private void calculateShift(Control c1, int edge1, out int shift1X, out int shift1Y)
+        {
+            shift1X = 0;
+            shift1Y = 0;
+            switch (edge1)
+            {
+                case 0:
+                    shift1X = c1.Width / 2;
+                    shift1Y = 0;
+                    break;
+                case 1:
+                    shift1X = c1.Width;
+                    shift1Y = c1.Height / 2;
+                    break;
+                case 2:
+                    shift1X = c1.Width / 2;
+                    shift1Y = c1.Height;
+                    break;
+                case 3:
+                    shift1X = 0;
+                    shift1Y = c1.Height / 2;
+                    break;
+            }
+        }
     }
 }
