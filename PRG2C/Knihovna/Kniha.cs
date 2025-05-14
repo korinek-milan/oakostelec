@@ -8,9 +8,9 @@ namespace Knihovna
 {
     internal class Kniha
     {
-        int Id;
-        string Name;
-        string Author;
+        protected int Id;
+        protected string Name;
+        protected string Author;
 
         public Kniha(int _Id, string _Name, string _Author)
         {
@@ -19,7 +19,7 @@ namespace Knihovna
             Author = _Author;
         }
 
-        public string vratInfo()
+        public virtual string vratInfo()
         {
             //return Id + " " + Name + " ";
             //Console.WriteLine($"Idcko: {Id}, Jmeno: {Name}, Autor: {Author} ");

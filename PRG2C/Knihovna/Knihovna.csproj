@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ekniha.cs" />
     <Compile Include="Kniha.cs" />
     <Compile Include="Knihovna.cs" />
     <Compile Include="Program.cs" />
