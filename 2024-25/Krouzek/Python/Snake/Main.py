@@ -101,6 +101,7 @@ def detectFood():
                 food_x = random.randint((int)(-wn.window_width() / 2) + 50, (int) (wn.window_width() / 2) - 50) #pomocí -50 a + 50 zmenším hranice, tudíž nebude z půlky za hranicí
                 food_y = random.randint((int)(-wn.window_height() / 2) + 50, (int) (wn.window_height() / 2) - 50) #pomocí -50 a + 50 zmenším hranice, tudíž nebude z půlky za hranicí
                 print("Position regenerated...")
+                break
                 i = 0
             i = i +1
             
@@ -116,7 +117,15 @@ def detectFood():
 
         segments.append(segment)
 
-
+def detectBody():
+    print(len(segments))
+    for seg in segments:
+        if(snakeHead.distance(seg) < 20):
+            snakeHead.goto(0,0)
+            snakeHead.direction = "stop"
+            for s in segments:
+                s.goto(1000,1000)
+            segments.clear()
 
 
 wn.listen()
@@ -133,8 +142,11 @@ wn.onkeypress(onEscPressed, "Escape")
 
 while running:
     moveSegments()
+    
     move()
+    detectBody()
     detectFood()#potřebuji po každém pohybu zavolat metodu, která kontroluje detekci jídla
+    
     
 
 
