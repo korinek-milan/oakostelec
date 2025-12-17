@@ -21,6 +21,8 @@ namespace KnihovnaDB
             //vrací cestu ke složce projektu debug nebo release podle toho, co si vybereme při kompilaci projektu
             string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
+            string s = Path.GetDirectoryName(baseDirectory);
+
             // Složka nebo soubor, který je relativní k projektu
             string relativePath = "data\\knihovna.db"; // Např. "data\mujSoubor.txt" nebo jen "soubor.txt"
 
