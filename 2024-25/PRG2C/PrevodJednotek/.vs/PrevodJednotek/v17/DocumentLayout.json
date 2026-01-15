@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "L:\\Kantori\\Ko\u0159\u00EDnek\\oakostelec-repo\\2024-25\\PRG2C\\PrevodJednotek\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FC3F40D2-C857-4179-B685-77CB936FFB60}|PrevodJednotek.csproj|l:\\kantori\\ko\u0159\u00EDnek\\oakostelec-repo\\2024-25\\prg2c\\prevodjednotek\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{FC3F40D2-C857-4179-B685-77CB936FFB60}|PrevodJednotek.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC3F40D2-C857-4179-B685-77CB936FFB60}|PrevodJednotek.csproj|L:\\Kantori\\Ko\u0159\u00EDnek\\oakostelec-repo\\2024-25\\PRG2C\\PrevodJednotek\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC3F40D2-C857-4179-B685-77CB936FFB60}|PrevodJednotek.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "L:\\Kantori\\Ko\u0159\u00EDnek\\oakostelec-repo\\2024-25\\PRG2C\\PrevodJednotek\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "L:\\Kantori\\Ko\u0159\u00EDnek\\oakostelec-repo\\2024-25\\PRG2C\\PrevodJednotek\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAD4vyYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T08:23:34.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [N\u00E1vrh]",
+              "DocumentMoniker": "L:\\Kantori\\Ko\u0159\u00EDnek\\oakostelec-repo\\2024-25\\PRG2C\\PrevodJednotek\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "L:\\Kantori\\Ko\u0159\u00EDnek\\oakostelec-repo\\2024-25\\PRG2C\\PrevodJednotek\\Form1.cs [N\u00E1vrh]",
+              "RelativeToolTip": "Form1.cs [N\u00E1vrh]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T08:20:29.031Z",
+              "EditorCaption": " [N\u00E1vrh]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

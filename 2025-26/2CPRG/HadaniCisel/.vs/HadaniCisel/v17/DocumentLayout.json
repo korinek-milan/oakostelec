@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "L:\\Kantori\\Ko\u0159\u00EDnek\\oakostelec-repo\\2025-26\\2CPRG\\HadaniCisel\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5147B0D4-61EA-47AE-BB58-CD8340F8AB62}|HadaniCisel.csproj|l:\\kantori\\ko\u0159\u00EDnek\\oakostelec-repo\\2025-26\\2cprg\\hadanicisel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5147B0D4-61EA-47AE-BB58-CD8340F8AB62}|HadaniCisel.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "L:\\Kantori\\Ko\u0159\u00EDnek\\oakostelec-repo\\2025-26\\2CPRG\\HadaniCisel\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "L:\\Kantori\\Ko\u0159\u00EDnek\\oakostelec-repo\\2025-26\\2CPRG\\HadaniCisel\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-18T06:17:08.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

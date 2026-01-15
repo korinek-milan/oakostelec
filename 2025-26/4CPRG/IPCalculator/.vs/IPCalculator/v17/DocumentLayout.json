@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "L:\\Kantori\\Ko\u0159\u00EDnek\\oakostelec-repo\\2025-26\\4CPRG\\IPCalculator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B3BE3B8A-E01C-43C3-82AF-808194BA2FFA}|IPCalculator.csproj|l:\\kantori\\ko\u0159\u00EDnek\\oakostelec-repo\\2025-26\\4cprg\\ipcalculator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3BE3B8A-E01C-43C3-82AF-808194BA2FFA}|IPCalculator.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "L:\\Kantori\\Ko\u0159\u00EDnek\\oakostelec-repo\\2025-26\\4CPRG\\IPCalculator\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "L:\\Kantori\\Ko\u0159\u00EDnek\\oakostelec-repo\\2025-26\\4CPRG\\IPCalculator\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAuwCcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-07T10:14:14.853Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
