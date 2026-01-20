@@ -35,17 +35,7 @@ namespace trycatchApp
                 Console.WriteLine(vypocet);
             }
             //konkrétní výjimka
-            catch (DivideByZeroException ex)
-            {
-                //Console.WriteLine("Nastalo dělení nulou, zadejte prosím hodnotu větší než 0");
-                Console.WriteLine(ex.Message);
-            }
-            //konkrétní výjimka
-            catch (FormatException ex)
-            {
-                Console.WriteLine("Zadaná hodnota není platná. Pravděpodobně jste nezadal číslo");
-                //Console.WriteLine(ex.Message);
-            }
+
             //pokud neplatí nic z předchozího, skočí do do této obecné výjimky
             catch (Exception ex)
             {

@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\korinek\\Desktop\\tmp\\trycatchApp\\",
+  "WorkspaceRootPath": "L:\\Kantori\\Ko\u0159\u00EDnek\\oakostelec-repo\\2025-26\\2CPRG\\trycatchApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0744291E-6AE9-4702-8189-BD359BACB809}|trycatchApp.csproj|c:\\users\\korinek\\desktop\\tmp\\trycatchapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0744291E-6AE9-4702-8189-BD359BACB809}|trycatchApp.csproj|l:\\kantori\\ko\u0159\u00EDnek\\oakostelec-repo\\2025-26\\2cprg\\trycatchapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0744291E-6AE9-4702-8189-BD359BACB809}|trycatchApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\korinek\\Desktop\\tmp\\trycatchApp\\Program.cs",
+              "DocumentMoniker": "L:\\Kantori\\Ko\u0159\u00EDnek\\oakostelec-repo\\2025-26\\2CPRG\\trycatchApp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\korinek\\Desktop\\tmp\\trycatchApp\\Program.cs",
+              "ToolTip": "L:\\Kantori\\Ko\u0159\u00EDnek\\oakostelec-repo\\2025-26\\2CPRG\\trycatchApp\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAABeAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-03T07:22:07.013Z",
               "EditorCaption": ""
