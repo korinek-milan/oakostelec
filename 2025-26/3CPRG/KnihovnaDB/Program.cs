@@ -41,8 +41,14 @@ namespace KnihovnaDB
                     Console.WriteLine(col1 + " " + col2);
                 }
              */
+                
+            SQLiteConnection conn;
+            string workingDirectory = Environment.CurrentDirectory;
+            string file = "\\knihovnaDB.db";
+            string path = workingDirectory + file;
+            conn = new SQLiteConnection($"Data Source={path};");
 
-            SQLiteConnection conn = new SQLiteConnection($"Data Source=C:\\Users\\korinek\\Downloads\\knihovnaDB.db;");
+            //SQLiteConnection conn = new SQLiteConnection($"Data Source=C:\\Users\\korinek\\Downloads\\knihovnaDB.db;");
             conn.Open();
 
             //SELECT * FROM Book;
@@ -52,11 +58,17 @@ namespace KnihovnaDB
             SQLiteDataReader sqlite_datareader = sqlite_cmdSelect.ExecuteReader();
             while (sqlite_datareader.Read())
             {
-                
+                try { 
+                int id = sqlite_datareader.GetInt32(3);
+                string tmp = sqlite_datareader.GetValue(1).ToString();
+                string name = sqlite_datareader["name"].ToString();
+                Console.WriteLine(id + " " + name);
+                }
+                catch (Exception ex){ Console.WriteLine("nastala chyba" + ex.Message); }
             }
+            sqlite_datareader.Close();
 
-
-                conn.Close();
+            conn.Close();
 
         }
     }
