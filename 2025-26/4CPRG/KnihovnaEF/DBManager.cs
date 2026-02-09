@@ -7,49 +7,42 @@ using System.Threading.Tasks;
 
 namespace KnihovnaEF
 {
-    internal class DBManager : DbContext
+    internal class DBManager
     {
-        public DbSet<Regal> Regaly { get; set; }
-        public DbSet<Kniha> Knihy { get; set; }
 
         public DBManager()
         {
-            //using (var db = new SkolaContext())
+            using (var db = new KnihovnaContext())
             {
                 //db.Database.EnsureCreated();
-                this.Database.Migrate();
+                db.Database.Migrate();
             }
-        }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder options)
-        {
-            options.UseSqlite("Data Source=knihovna.db");
         }
 
         public void VytvorRegal(string nazevRegalu)
         {
             Regal r = new Regal { Nazev = nazevRegalu };
-            using (var db = new DBManager())
+            using (var db = new KnihovnaContext())
             {
                 db.Regaly.Add(r);
                 db.SaveChanges();
             }
         }
 
-        public void PridejKnihy(string nazevKnihy, string nazevRegalu)
+        public void PridejKnihu(string nazevKnihy, string nazevRegalu)
         {
-            using (var db = new DBManager())
+            using (var db = new KnihovnaContext())
             {
-                var regalId = db.Regaly
+                var hledanyRegal = db.Regaly
                   .FirstOrDefault(t => t.Nazev == nazevRegalu);
 
-                if (regalId != null)
+                if (hledanyRegal != null)
                 {
-                    Kniha k = new Kniha { Nazev = nazevKnihy, RegalId = regalId };
+                    Kniha k = new Kniha { Nazev = nazevKnihy, RegalId = hledanyRegal.Id };
+                    db.Knihy.Add(k);
+                    db.SaveChanges();
                 }
             }
-
-                
         }
     }
 }

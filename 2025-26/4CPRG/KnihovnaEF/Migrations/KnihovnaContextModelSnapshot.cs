@@ -2,19 +2,16 @@
 using KnihovnaEF;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
 namespace KnihovnaEF.Migrations
 {
-    [DbContext(typeof(DBManager))]
-    [Migration("20260128094934_InitialCreate")]
-    partial class InitialCreate
+    [DbContext(typeof(KnihovnaContext))]
+    partial class KnihovnaContextModelSnapshot : ModelSnapshot
     {
-        /// <inheritdoc />
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.23");
