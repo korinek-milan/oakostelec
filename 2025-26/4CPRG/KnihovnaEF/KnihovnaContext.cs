@@ -1,0 +1,28 @@
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace KnihovnaEF
+{
+    internal class KnihovnaContext : DbContext
+    {
+        public DbSet<Regal> Regaly { get; set; }
+        public DbSet<Kniha> Knihy { get; set; }
+
+
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        {
+            options.UseSqlite("Data Source=knihovna.db");
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Regal>()
+                .HasIndex(t => t.Nazev)
+                .IsUnique();
+        }
+    }
+}

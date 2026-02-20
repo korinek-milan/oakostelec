@@ -22,17 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "databaseManager.cs",
               "DocumentMoniker": "L:\\Kantori\\Ko\u0159\u00EDnek\\oakostelec-repo\\2025-26\\4CPRG\\KnihovnaDB\\databaseManager.cs",
               "RelativeDocumentMoniker": "databaseManager.cs",
-              "ToolTip": "L:\\Kantori\\Ko\u0159\u00EDnek\\oakostelec-repo\\2025-26\\4CPRG\\KnihovnaDB\\databaseManager.cs*",
-              "RelativeToolTip": "databaseManager.cs*",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAA8AAAAAAAAAA==",
+              "ToolTip": "L:\\Kantori\\Ko\u0159\u00EDnek\\oakostelec-repo\\2025-26\\4CPRG\\KnihovnaDB\\databaseManager.cs",
+              "RelativeToolTip": "databaseManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-17T08:13:11.126Z",
               "EditorCaption": ""
@@ -47,7 +51,8 @@
               "RelativeToolTip": "Kniha.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T08:09:54.509Z"
+              "WhenOpened": "2025-09-17T08:09:54.509Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -57,9 +62,10 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "L:\\Kantori\\Ko\u0159\u00EDnek\\oakostelec-repo\\2025-26\\4CPRG\\KnihovnaDB\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-17T08:09:39.101Z"
+              "WhenOpened": "2025-09-17T08:09:39.101Z",
+              "EditorCaption": ""
             }
           ]
         }
