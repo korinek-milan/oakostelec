@@ -17,12 +17,5 @@ namespace KnihovnaEF
         {
             options.UseSqlite("Data Source=knihovna.db");
         }
-
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Regal>()
-                .HasIndex(t => t.Nazev)
-                .IsUnique();
-        }
     }
 }

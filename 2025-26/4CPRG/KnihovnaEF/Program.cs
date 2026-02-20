@@ -6,7 +6,9 @@
         {
             DBManager db = new DBManager();
 
-            db.VytvorRegal("Regal 1");
+            //db.VytvorRegal("Regal 1");
+
+            //db.PridejKnihu("Kniha 1", "Regal 1");
 
             //db.PridejKnihu("Kniha 1", "Regal 1");
 

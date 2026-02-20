@@ -48,9 +48,6 @@ namespace KnihovnaEF.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Nazev")
-                        .IsUnique();
-
                     b.ToTable("Regaly");
                 });
 
