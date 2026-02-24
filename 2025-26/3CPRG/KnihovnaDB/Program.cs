@@ -51,8 +51,38 @@ namespace KnihovnaDB
             //SQLiteConnection conn = new SQLiteConnection($"Data Source=C:\\Users\\korinek\\Downloads\\knihovnaDB.db;");
             conn.Open();
 
+            //zadává uživatel - pozor na SQL Injection
+            /*Console.WriteLine("Název knihy:");
+            string name = Console.ReadLine();
+
+            Console.WriteLine("Autor:");
+            string author = Console.ReadLine();
+
+            Console.WriteLine("Rok:");
+            int year = Convert.ToInt32(Console.ReadLine());
+            */
+
+            
+            /*SQLiteCommand cmdInsert = conn.CreateCommand();
+                                                                           //pokud používám parametr, nemusím řešit jednoduché uvozovky u hodnot
+            cmdInsert.CommandText = $"INSERT INTO Book (name, author, year) VALUES(@name, @author, @year);";
+            
+            //vše od uživatele zadávám přes parametry, aby nedošlo k SQL Injection
+            cmdInsert.Parameters.AddWithValue("@name", name);
+            cmdInsert.Parameters.AddWithValue("@author", author);
+            cmdInsert.Parameters.AddWithValue("@year", year);
+
+            //Z databáze nic nechci, proto ExecuteNonQuery();
+            cmdInsert.ExecuteNonQuery();*/
+
+            //update se chová úplně stejně jako insert
+            //zde jsem se rozhodl napsat hodntoy natvrdo, proto nemusím použít parametry, pokud by zadával uživatel, opět musím parametricky
+            SQLiteCommand cmdUpdate = conn.CreateCommand();
+            cmdUpdate.CommandText = $"update book set name = 'krasna nova knizka 2', author = 'novy autor' where id = 15;";
+            cmdUpdate.ExecuteNonQuery();
+
             //SELECT * FROM Book;
-            SQLiteCommand sqlite_cmdSelect = conn.CreateCommand();
+            /*SQLiteCommand sqlite_cmdSelect = conn.CreateCommand();
             sqlite_cmdSelect.CommandText = "SELECT * FROM Book";
             //sqlite_cmdSelect.ExecuteNonQuery();
             SQLiteDataReader sqlite_datareader = sqlite_cmdSelect.ExecuteReader();
@@ -66,7 +96,7 @@ namespace KnihovnaDB
                 }
                 catch (Exception ex){ Console.WriteLine("nastala chyba" + ex.Message); }
             }
-            sqlite_datareader.Close();
+            sqlite_datareader.Close();*/
 
             conn.Close();
 
