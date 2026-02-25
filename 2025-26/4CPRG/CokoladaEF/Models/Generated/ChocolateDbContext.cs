@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 
-namespace CokoladaEF.Models;
+namespace CokoladaEF;
 
 public partial class ChocolateDbContext : DbContext
 {

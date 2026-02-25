@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace CokoladaEF.Models;
+namespace CokoladaEF;
 
 public partial class ChocolateType
 {
