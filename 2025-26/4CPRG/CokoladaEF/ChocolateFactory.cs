@@ -23,9 +23,7 @@ namespace CokoladaEF
                 return null;
             }
 
-            DatabaseManager dbm = new DatabaseManager();
-            ChocolateType receptNapozadovanouCokoladu = dbm.GetChocolateTypeByName(ChocolateName);
-
+            
             //4. Vyrobit instanci čokolády
             //4a. spotřeboval jsem suroviny ze skladu, musím udělat update
             //4b. ChocolateFactory si drží seznam vyrobených čokolád - přidám právě vyrobenou čokoládu do seznamu
@@ -34,6 +32,9 @@ namespace CokoladaEF
 
             //receptNapozadovanouCokoladu.CocoaBeans obsahuje množství, které potřebuji
             //když to pošlu jako zápornou hodnotu, tak to odečte
+            DatabaseManager dbm = new DatabaseManager();
+            ChocolateType receptNapozadovanouCokoladu = dbm.GetChocolateTypeByName(ChocolateName);
+
             dbm.RestockIngredient("CocoaBeans", receptNapozadovanouCokoladu.CocoaBeans * -1);
             dbm.RestockIngredient("Sugar", receptNapozadovanouCokoladu.Sugar * -1);
             dbm.RestockIngredient("Milk", receptNapozadovanouCokoladu.Milk * -1);
@@ -114,7 +115,8 @@ namespace CokoladaEF
 
         public int RestockIngredient(string IngredientName, int Amount)
         {
-            return 0;
+            DatabaseManager dbm = new DatabaseManager();
+            return dbm.RestockIngredient(IngredientName, Amount);
         }
     }
 }

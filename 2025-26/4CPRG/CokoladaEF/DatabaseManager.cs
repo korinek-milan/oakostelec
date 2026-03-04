@@ -33,7 +33,7 @@ namespace CokoladaEF
             }
         }
 
-        //public int RestockIngredient(string IngredientName, int Amount)
+        //Funkce dělá Update Ingredient set Amount = Amount where Name = IngredientName
         public int RestockIngredient(string IngredientName, int Amount)
         {
             using (var db = new ChocolateDbContext())

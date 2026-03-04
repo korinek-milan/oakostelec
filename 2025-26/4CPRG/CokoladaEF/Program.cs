@@ -4,9 +4,8 @@
     {
         static void Main(string[] args)
         {
-            DatabaseManager dbm = new DatabaseManager();
-
-            dbm.GetAllIngredients();
+            //Výpis menu, čtení požadavků od uživatele
+            //Veškeré funkce se volají z ChocolateFactory (nic nevolám přímo z DatabaseManageru)
         }
     }
 }
