@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36717.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BinarniStrom", "BinarniStrom.csproj", "{CDB1E3FD-3F78-47FC-9FF6-BB3011EBF073}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDB1E3FD-3F78-47FC-9FF6-BB3011EBF073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDB1E3FD-3F78-47FC-9FF6-BB3011EBF073}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDB1E3FD-3F78-47FC-9FF6-BB3011EBF073}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDB1E3FD-3F78-47FC-9FF6-BB3011EBF073}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0616145-EDF9-474B-8133-FDBF4A418E9E}
+	EndGlobalSection
+EndGlobal
