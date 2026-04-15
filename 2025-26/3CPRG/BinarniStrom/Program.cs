@@ -17,6 +17,7 @@ namespace BinarniStrom
             t.Add(5);
             t.Add(1);
             t.Add(2);
+            t.Add(3);
         }
     }
 }

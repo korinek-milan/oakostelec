@@ -23,20 +23,40 @@ namespace BinarniStrom
             else
             {
                 Node tmp = Root;
-                if (tmp.Value == n.Value)
+
+                while (true)
                 {
-                    throw new Exception("Hodnota existuje");
+                    if (tmp.Value == n.Value)
+                    {
+                        throw new Exception("Hodnota existuje");
+                    }
+                    else if (tmp.Value < n.Value)
+                    {
+                        if (tmp.Right == null)
+                        {
+                            tmp.Right = n;
+                            break;
+                        }
+                        else
+                        {
+                            tmp = tmp.Right;
+                        }
+
+                    }
+                    else
+                    {
+                        if (tmp.Left == null)
+                        {
+                            tmp.Left = n;
+                            break;
+                        }
+                        else
+                        {
+                            tmp = tmp.Left;
+                        }
+
+                    }
                 }
-                else if (tmp.Value < n.Value)
-                {
-                    //jdeme doprava
-                }
-                else
-                {
-                    //jdeme doleva
-                }
-                
-                //porovnání jestli jde doleva nebo doprava nebo konec
             }
         }
     }

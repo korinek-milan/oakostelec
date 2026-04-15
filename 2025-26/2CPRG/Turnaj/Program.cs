@@ -10,7 +10,17 @@ namespace Turnaj
     {
         static void Main(string[] args)
         {
+            Tournament t = new Tournament("Uzasny turnaj");
+            //vytvoření hráčů
+            //vytvoření týmu
+            //přidání týmu do turnaje
 
+            while (t.getWinner() == "Turnaj ještě není dohraný")
+            {
+                t.CreateAndPlaGame1();
+            }
+
+            Console.WriteLine(t.getWinner()); ;
 
         }
     }
