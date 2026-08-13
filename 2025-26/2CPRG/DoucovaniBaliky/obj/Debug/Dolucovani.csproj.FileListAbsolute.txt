@@ -1,8 +1,0 @@
-C:\Users\korin\Desktop\tmp\Dolucovani\bin\Debug\Dolucovani.exe.config
-C:\Users\korin\Desktop\tmp\Dolucovani\bin\Debug\Dolucovani.exe
-C:\Users\korin\Desktop\tmp\Dolucovani\bin\Debug\Dolucovani.pdb
-C:\Users\korin\Desktop\tmp\Dolucovani\obj\Debug\Dolucovani.csproj.AssemblyReference.cache
-C:\Users\korin\Desktop\tmp\Dolucovani\obj\Debug\Dolucovani.csproj.CoreCompileInputs.cache
-C:\Users\korin\Desktop\tmp\Dolucovani\obj\Debug\Dolucovani.exe
-C:\Users\korin\Desktop\tmp\Dolucovani\obj\Debug\Dolucovani.pdb
-C:\Users\korin\Desktop\tmp\Dolucovani\obj\Debug\Dolucovani.exe.config
