@@ -1,0 +1,8 @@
+C:\Users\korin\Desktop\tmp\Funkce\bin\Debug\Funkce.exe.config
+C:\Users\korin\Desktop\tmp\Funkce\bin\Debug\Funkce.exe
+C:\Users\korin\Desktop\tmp\Funkce\bin\Debug\Funkce.pdb
+C:\Users\korin\Desktop\tmp\Funkce\obj\Debug\Funkce.csproj.AssemblyReference.cache
+C:\Users\korin\Desktop\tmp\Funkce\obj\Debug\Funkce.csproj.CoreCompileInputs.cache
+C:\Users\korin\Desktop\tmp\Funkce\obj\Debug\Funkce.exe
+C:\Users\korin\Desktop\tmp\Funkce\obj\Debug\Funkce.pdb
+C:\Users\korin\Desktop\tmp\Funkce\obj\Debug\Funkce.exe.config

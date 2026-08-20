@@ -1,0 +1,8 @@
+C:\Users\korin\Desktop\tmp\TridyOpakovani\bin\Debug\TridyOpakovani.exe.config
+C:\Users\korin\Desktop\tmp\TridyOpakovani\bin\Debug\TridyOpakovani.exe
+C:\Users\korin\Desktop\tmp\TridyOpakovani\bin\Debug\TridyOpakovani.pdb
+C:\Users\korin\Desktop\tmp\TridyOpakovani\obj\Debug\TridyOpakovani.csproj.AssemblyReference.cache
+C:\Users\korin\Desktop\tmp\TridyOpakovani\obj\Debug\TridyOpakovani.csproj.CoreCompileInputs.cache
+C:\Users\korin\Desktop\tmp\TridyOpakovani\obj\Debug\TridyOpakovani.exe
+C:\Users\korin\Desktop\tmp\TridyOpakovani\obj\Debug\TridyOpakovani.pdb
+C:\Users\korin\Desktop\tmp\TridyOpakovani\obj\Debug\TridyOpakovani.exe.config
